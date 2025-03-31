@@ -1,0 +1,244 @@
+/*
+Author: Benjamin Guo
+date: 2/2/2025
+*/
+
+
+/*
+Desktop layout
+*/
+@media (min-width: 1024px) {
+
+    .nav {
+        display: block; 
+    text-align: center;
+    }
+
+    h2, h1 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    p {
+        text-align: center;
+        margin: 5px;
+    }
+    #main_container {
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(159, 194, 236);
+
+    }
+    .flexbox1 {
+        display: flex;
+        flex-wrap: wrap; 
+        width: 70%;
+        border-radius: 20px;
+        background-color: rgb(112, 155, 208);
+        margin: 20px;
+        box-shadow: 5px 5px 10px black;
+        align-items: center;
+    }
+
+    body {
+        margin: 0px;
+        height: 100vh;
+        width: 100vw;
+        font-family: Helvetica
+    }
+
+    .header_flexbox {
+        display:flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: rgb(112, 155, 208);
+        justify-content: center;
+        width:30%;
+        margin: 20px;
+        box-shadow: 5px 5px 10px black;
+    }
+    .widgets {
+        width: 25%;
+    }
+
+    .pic {
+        width: 90%;
+        margin: 10px;
+        border: 2px solid black
+    }
+
+    .header_pic {
+        margin: 20px;
+        border: 2px solid black
+    }
+}
+
+/*
+Mobile phone layout
+*/
+@media (min-width: 1px) and (max-width: 480px) {
+
+    body {
+        font-family: 'Lucida Sans'
+    }
+
+    .widgets:nth-child(n+5) { 
+        display: none; 
+    }
+    .nav {
+        display: block; 
+    text-align: center;
+    }
+
+    h2, h1 {
+        text-align: center;
+        margin-bottom: 3px
+    }
+
+
+    p {
+        display:none;
+    }
+
+    .header_flexbox {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+        border-radius: 20px;
+        background-color: rgb(174, 144, 199);
+        box-shadow: 5px 5px 10px black;
+        
+    }
+    #main_container {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(231, 230, 229)
+    }
+    .flexbox1 {
+        display:flex;
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        border-radius: 20px;
+        background-color: rgb(174, 144, 199);
+        align-items: center;
+        margin: 10px;
+        box-shadow: 5px 5px 10px black;
+    }
+    .widgets {
+        display: flex;
+        width: 100%; 
+        margin: 10px
+    }
+
+    .pic {
+        width: 30%;
+        margin: 3px;
+        border: 2px solid black
+    }
+
+    .header_pic {
+        width: 50%;
+        margin: 10px;
+        border: 2px solid black
+    }
+
+    .flexbox_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5px
+    }
+
+}
+
+
+/*
+Tablet layout
+*/
+@media (min-width: 481px) and (max-width: 1023px){
+
+    .widgets:nth-child(n+7) { 
+        display: none;
+    }
+
+    
+
+    .nav {
+        display: block; 
+    text-align: center;
+    padding: 10px
+    }
+    
+
+    h2, h1 {
+        text-align: center;
+        margin: 0px
+    }
+
+    p {
+        text-align: center;
+        margin: 8px
+    }
+
+    .header_flexbox {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 20px;
+        background-color: rgb(112, 155, 208);
+        margin: 20px;
+        box-shadow: 5px 5px 10px black;
+    }
+    body {
+        margin: 0px;
+        font-family: Helvetica
+    }
+    #main_container {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(159, 194, 236);
+    }
+
+    .flexbox1 {
+        display:flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        border-radius: 20px;
+        background-color: rgb(112, 155, 208);
+        margin: 20px;
+        align-items: center;
+        box-shadow: 5px 5px 10px black;
+        justify-content: center;
+    }
+
+    .widgets {
+        width: 45%;
+        margin: 10px
+
+    }
+
+    .pic {
+        width:100%;
+        border: 2px solid black
+    }
+
+    .header_pic {
+        width: 50%;
+        margin: 20px;
+        border: 2px solid black
+    
+    }
+
+
+}
+
+
+
